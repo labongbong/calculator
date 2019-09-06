@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+<body>
+    <div id="calculator">
+        <div class="state">
+            <div class="calc">
+                <h1 id="calc-h1">+</h1>
+            </div>
+            <div class="inputs">
+                <input id="input1" type="text">
+                <input id="input2" type="text">
+            </div>
+        </div>
+        <div class="result">
+            <h1 id="result-h1"></h1>
+        </div>
+        <div class="keypad">
+            <button class="key" onclick="keypress(7)">7</button>
+            <button class="key" onclick="keypress(8)">8</button>
+            <button class="key" onclick="keypress(9)">9</button>
+            <button class="key" onclick="keypress('+')">+</button>
+            <button class="key" onclick="keypress(4)">4</button>
+            <button class="key" onclick="keypress(5)">5</button>
+            <button class="key" onclick="keypress(6)">6</button>
+            <button class="key" onclick="keypress('-')">-</button>
+            <button class="key" onclick="keypress(1)">1</button>
+            <button class="key" onclick="keypress(2)">2</button>
+            <button class="key" onclick="keypress(3)">3</button>
+            <button class="key" onclick="keypress('*')">*</button>
+            <button class="key" onclick="keypress('C')">C</button>
+            <button class="key" onclick="keypress(0)">0</button>
+            <button class="key" onclick="keypress('=')">=</button>
+            <button class="key" onclick="keypress('/')">/</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
